@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beytras Apartments – Kitengela, Kenya</title>
+<meta name="description" content="Modern apartments and houses in Kitengela. 2 & 3 bedroom units from KES 6M. Flexible 2-year payment plan. Call +254 114 837 807.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1a1f5e;--navy-dark:#0d1140;--gold:#c9962a;--gold-light:#e8b84b;--white:#fff;--off-white:#f5f4f0;--gray:#7a7a7a;}
+*{margin:0;padding:0;box-sizing:border-box;} html{scroll-behavior:smooth;}
+body{font-family:"DM Sans",sans-serif;background:var(--off-white);color:#1a1a1a;overflow-x:hidden;}
+nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(13,17,64,0.97);backdrop-filter:blur(12px);padding:0 5%;height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(201,150,42,0.25);}
+.logo svg{height:42px;width:auto;}
+.nav-links{display:flex;gap:32px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:500;transition:color 0.2s;}
+.nav-links a:hover{color:var(--gold-light);}
+.nav-cta{background:var(--gold)!important;color:var(--navy-dark)!important;padding:9px 22px;border-radius:2px;font-weight:600!important;}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;background:var(--navy-dark);padding-top:72px;overflow:hidden;}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 5% 80px 8%;z-index:2;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,150,42,0.15);border:1px solid rgba(201,150,42,0.35);color:var(--gold-light);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin-bottom:28px;width:fit-content;}
+.hero-badge::before{content:"";width:6px;height:6px;background:var(--gold);border-radius:50%;animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+.hero-title{font-family:"Cormorant Garamond",serif;font-size:clamp(44px,5vw,76px);font-weight:300;line-height:1.08;color:var(--white);margin-bottom:22px;}
+.hero-title em{font-style:normal;color:var(--gold-light);font-weight:600;}
+.hero-desc{color:rgba(255,255,255,0.55);font-size:15px;line-height:1.75;max-width:420px;margin-bottom:44px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-primary{background:var(--gold);color:var(--navy-dark);padding:13px 30px;border:none;font-family:"DM Sans",sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all 0.2s;border-radius:2px;}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);}
+.btn-ghost{border:1px solid rgba(255,255,255,0.25);color:var(--white);background:transparent;padding:13px 30px;font-family:"DM Sans",sans-serif;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all 0.2s;border-radius:2px;}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light);}
+.hero-stats{margin-top:56px;display:flex;gap:44px;border-top:1px solid rgba(255,255,255,0.08);padding-top:28px;}
+.stat-num{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:700;color:var(--gold-light);}
+.stat-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:3px;}
+.hero-right{position:relative;overflow:hidden;}
+.hero-gallery{position:absolute;inset:0;display:grid;grid-template-rows:60% 40%;gap:2px;}
+.hero-gallery-top{overflow:hidden;}
+.hero-gallery-bottom{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
+.hero-gallery-bottom div{overflow:hidden;}
+.hero-gallery img{width:100%;height:100%;object-fit:cover;display:block;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,var(--navy-dark) 0%,transparent 55%);z-index:1;pointer-events:none;}
+.hero-tag{position:absolute;bottom:28px;right:28px;z-index:3;background:rgba(201,150,42,0.95);color:var(--navy-dark);padding:14px 20px;font-weight:700;font-size:12px;border-radius:2px;text-align:center;}
+.hero-tag span{display:block;font-size:20px;font-weight:800;}
+section{padding:96px 8%;}
+.section-label{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.section-title{font-family:"Cormorant Garamond",serif;font-size:clamp(34px,4vw,54px);font-weight:400;line-height:1.1;color:var(--navy-dark);}
+.gold-line{width:44px;height:3px;background:var(--gold);margin:18px 0 0;}
+.section-desc{font-size:15px;line-height:1.75;color:var(--gray);max-width:540px;}
+.gallery-strip{background:var(--navy-dark);padding:0;overflow:hidden;}
+.strip-track{display:flex;gap:3px;animation:slide 35s linear infinite;width:max-content;}
+@keyframes slide{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.strip-track:hover{animation-play-state:paused;}
+.strip-img{height:300px;width:auto;object-fit:cover;filter:brightness(0.8);transition:filter 0.3s;flex-shrink:0;display:block;}
+.strip-img:hover{filter:brightness(1);}
+.properties{background:var(--off-white);}
+.props-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:56px;flex-wrap:wrap;gap:24px;}
+.props-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:3px;}
+.prop-col-right{display:grid;grid-template-rows:auto auto;gap:3px;}
+.prop-card{background:var(--white);position:relative;overflow:hidden;}
+.prop-img-wrap{position:relative;overflow:hidden;}
+.prop-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.7s;}
+.prop-card:hover .prop-img{transform:scale(1.05);}
+.prop-badge{position:absolute;top:16px;left:16px;background:var(--gold);color:var(--white);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;border-radius:2px;z-index:2;}
+.prop-body{padding:22px 26px 26px;}
+.prop-location{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:5px;}
+.prop-title{font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:600;color:var(--navy-dark);margin-bottom:10px;}
+.prop-feats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;}
+.prop-feat{font-size:12px;color:var(--gray);}
+.prop-price{font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:700;color:var(--navy);}
+.prop-price-sub{font-size:11px;color:var(--gray);margin-top:2px;}
+.interior-card{background:var(--navy-dark);}
+.interior-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;height:200px;}
+.interior-grid img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.75);}
+.interior-label{padding:16px 22px;}
+.products{background:var(--navy-dark);}
+.products .section-label{color:var(--gold-light);}
+.products .section-title{color:var(--white);}
+.products-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:56px;flex-wrap:wrap;gap:24px;}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.prod-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);display:grid;grid-template-rows:200px 1fr;overflow:hidden;transition:border-color 0.3s,transform 0.3s;}
+.prod-card:hover{border-color:rgba(201,150,42,0.4);transform:translateY(-4px);}
+.prod-img-wrap{overflow:hidden;position:relative;}
+.prod-img{width:100%;height:100%;object-fit:cover;filter:brightness(0.7);transition:all 0.5s;display:block;}
+.prod-card:hover .prod-img{filter:brightness(0.95);transform:scale(1.05);}
+.prod-num{position:absolute;top:10px;left:12px;font-family:"Cormorant Garamond",serif;font-size:12px;font-weight:700;color:rgba(255,255,255,0.7);background:rgba(0,0,0,0.45);padding:2px 8px;border-radius:1px;}
+.prod-body{padding:20px 22px 24px;}
+.prod-name{font-family:"Cormorant Garamond",serif;font-size:20px;font-weight:600;color:var(--white);margin-bottom:7px;}
+.prod-desc{font-size:12px;color:rgba(255,255,255,0.4);line-height:1.6;margin-bottom:14px;}
+.prod-prices{border-top:1px solid rgba(255,255,255,0.07);padding-top:12px;display:flex;flex-direction:column;gap:5px;}
+.prod-price-row{display:flex;justify-content:space-between;align-items:center;}
+.prod-size{font-size:11px;color:rgba(255,255,255,0.3);}
+.prod-price-val{font-size:13px;font-weight:600;color:var(--gold-light);}
+.progress{background:var(--white);}
+.progress-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:48px;}
+.progress-img-wrap{position:relative;overflow:hidden;height:260px;}
+.progress-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s;}
+.progress-img-wrap:hover img{transform:scale(1.06);}
+.progress-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(13,17,64,0.85));color:#fff;padding:20px 14px 12px;font-size:12px;font-weight:500;}
+.payment{background:var(--off-white);}
+.payment-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
+.payment-visual{background:var(--navy-dark);padding:52px;position:relative;overflow:hidden;}
+.plan-big{font-family:"Cormorant Garamond",serif;font-size:80px;font-weight:700;color:var(--gold-light);line-height:1;}
+.plan-sub{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:2px;text-transform:uppercase;margin-bottom:36px;}
+.plan-steps{display:flex;flex-direction:column;gap:20px;}
+.plan-step{display:flex;gap:14px;align-items:flex-start;}
+.plan-step-num{width:30px;height:30px;flex-shrink:0;border:1px solid rgba(201,150,42,0.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--gold-light);}
+.plan-step-txt{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;padding-top:5px;}
+.plan-step-txt strong{color:var(--white);}
+.payment-features{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0;}
+.pay-feat{display:flex;gap:10px;align-items:flex-start;}
+.pay-feat-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:7px;}
+.pay-feat-txt{font-size:13px;color:var(--gray);line-height:1.4;}
+.pay-feat-txt strong{color:var(--navy-dark);display:block;font-size:14px;margin-bottom:1px;}
+.contact{background:var(--navy-dark);}
+.contact .section-label{color:var(--gold-light);}
+.contact .section-title{color:var(--white);}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:72px;margin-top:56px;}
+.contact-info{display:flex;flex-direction:column;gap:24px;}
+.contact-item{display:flex;gap:16px;align-items:flex-start;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,0.06);}
+.contact-item:last-child{border:none;}
+.contact-icon{width:44px;height:44px;flex-shrink:0;border:1px solid rgba(201,150,42,0.3);display:flex;align-items:center;justify-content:center;border-radius:2px;}
+.contact-lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:3px;}
+.contact-val{font-size:14px;color:var(--white);line-height:1.5;}
+.contact-form{display:flex;flex-direction:column;gap:14px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.form-field{display:flex;flex-direction:column;gap:5px;}
+.form-field label{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);}
+.form-field input,.form-field select,.form-field textarea{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);color:var(--white);padding:11px 14px;font-family:"DM Sans",sans-serif;font-size:14px;outline:none;transition:border-color 0.2s;border-radius:2px;}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--gold);}
+.form-field textarea{resize:vertical;min-height:90px;}
+.form-field select option{background:var(--navy-dark);}
+footer{background:#070d2a;padding:36px 8%;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.05);flex-wrap:wrap;gap:16px;}
+.footer-copy{font-size:12px;color:rgba(255,255,255,0.25);}
+.footer-links{display:flex;gap:24px;list-style:none;}
+.footer-links a{font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;transition:color 0.2s;}
+.footer-links a:hover{color:var(--gold-light);}
+.fi{opacity:0;transform:translateY(20px);transition:opacity 0.65s ease,transform 0.65s ease;}
+.fi.in{opacity:1;transform:translateY(0);}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;} .hero-right{min-height:60vw;} .nav-links{display:none;}
+  .props-grid{grid-template-columns:1fr;} .products-grid{grid-template-columns:1fr;}
+  .progress-grid{grid-template-columns:1fr 1fr;} .payment-grid,.contact-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo">
+    <svg viewBox="0 0 300 65" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="16,43 30,25 44,43" fill="none" stroke="#c9962a" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <polyline points="30,43 44,25 58,43" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <rect x="16" y="46" width="42" height="4.5" fill="#ffffff" rx="1"/>
+      <text x="72" y="40" font-family="Georgia,serif" font-size="24" font-weight="bold" fill="#ffffff" letter-spacing="2">BEYTRAS</text>
+      <text x="73" y="55" font-family="Georgia,serif" font-size="13" fill="#c9962a" letter-spacing="3.5">APARTMENTS</text>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#properties">Properties</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#progress">Construction</a></li>
+    <li><a href="#payment">Payment Plans</a></li>
+    <li><a href="#contact" class="nav-cta">Enquire Now</a></li>
+  </ul>
+</nav>
+
+<section class="hero" style="padding:0;padding-top:72px;">
+  <div class="hero-left">
+    <div class="hero-badge">45% Sold &#8212; Limited Units Left</div>
+    <h1 class="hero-title">Your Future<br>Home in<br><em>Kitengela</em></h1>
+    <p class="hero-desc">Modern apartments and houses built to the highest standard. Affordable pricing, flexible payment plans, and premium finishes throughout.</p>
+    <div class="hero-btns">
+      <a href="#properties" class="btn-primary">View Properties</a>
+      <a href="#contact" class="btn-ghost">Book a Viewing</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">16</div><div class="stat-label">Kitengela Apts</div></div>
+      <div><div class="stat-num">30%</div><div class="stat-label">Deposit &amp; Get Keys</div></div>
+      <div><div class="stat-num">6M+</div><div class="stat-label">Starting Price KES</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-gallery">
+      <div class="hero-gallery-top"><img src="images/apt_night_render.jpg" alt="Beytras Apartments" style="object-position:center 40%;"></div>
+      <div class="hero-gallery-bottom">
+        <div><img src="images/building_photo1.jpg" alt="Beytras Building" style="object-position:center 30%;"></div>
+        <div><img src="images/building_photo2.jpg" alt="Beytras Building" style="object-position:center 30%;"></div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-tag"><span>KES 6M</span>2-Bed from</div>
+  </div>
+</section>
+
+<div class="gallery-strip">
+  <div class="strip-track">
+    <img class="strip-img" src="images/apt_night_render.jpg" alt="">
+    <img class="strip-img" src="images/apt_day_render.jpg" alt="">
+    <img class="strip-img" src="images/building_photo1.jpg" alt="">
+    <img class="strip-img" src="images/utumishi_houses.jpg" alt="">
+    <img class="strip-img" src="images/utumishi_gate.jpg" alt="">
+    <img class="strip-img" src="images/interior_lounge.jpg" alt="">
+    <img class="strip-img" src="images/interior_kitchen.jpg" alt="">
+    <img class="strip-img" src="images/utumishi_entrance.jpg" alt="">
+    <img class="strip-img" src="images/apt_night_render.jpg" alt="">
+    <img class="strip-img" src="images/apt_day_render.jpg" alt="">
+    <img class="strip-img" src="images/building_photo1.jpg" alt="">
+    <img class="strip-img" src="images/utumishi_houses.jpg" alt="">
+    <img class="strip-img" src="images/utumishi_gate.jpg" alt="">
+    <img class="strip-img" src="images/interior_lounge.jpg" alt="">
+    <img class="strip-img" src="images/interior_kitchen.jpg" alt="">
+    <img class="strip-img" src="images/utumishi_entrance.jpg" alt="">
+  </div>
+</div>
+
+<section class="properties" id="properties">
+  <div class="props-header fi">
+    <div>
+      <div class="section-label">Available Now</div>
+      <h2 class="section-title">Our Properties</h2>
+      <div class="gold-line"></div>
+    </div>
+    <p class="section-desc" style="max-width:360px;">Two developments &#8212; modern apartments in Kitengela and a spacious 5-bedroom home in Utumishi Estate.</p>
+  </div>
+  <div class="props-grid fi">
+    <div class="prop-card">
+      <div class="prop-img-wrap" style="height:420px;">
+        <img class="prop-img" src="images/apt_night_render.jpg" alt="Kitengela Apartments" style="object-position:center 40%;">
+        <div class="prop-badge">For Sale &amp; Rent</div>
+      </div>
+      <div class="prop-body">
+        <div class="prop-location">Off Namanga Road &middot; Kitengela</div>
+        <div class="prop-title">Beytras Apartments &#8212; 16 Units</div>
+        <div class="prop-feats"><span class="prop-feat">2 &amp; 3 Bedrooms</span><span class="prop-feat">&middot;</span><span class="prop-feat">120m&sup2; per unit</span><span class="prop-feat">&middot;</span><span class="prop-feat">Balcony &middot; WiFi &middot; CCTV &middot; Car Park</span></div>
+        <div class="prop-price">KES 6M &#8211; 7M <span style="font-size:14px;font-weight:400;color:var(--gray);">to buy</span></div>
+        <div class="prop-price-sub">Rent from KES 40,000/mo &middot; 2-year payment plan available</div>
+      </div>
+    </div>
+    <div class="prop-col-right">
+      <div class="prop-card">
+        <div class="prop-img-wrap" style="height:220px;">
+          <img class="prop-img" src="images/utumishi_houses.jpg" alt="Utumishi Estate House">
+          <div class="prop-badge" style="background:#2939b5;">For Sale</div>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">Second Ave &middot; Utumishi Estate</div>
+          <div class="prop-title">5-Bedroom Family Home</div>
+          <div class="prop-price">KES 15 Million</div>
+          <div class="prop-price-sub">200m from Namanga Road</div>
+        </div>
+      </div>
+      <div class="prop-card interior-card">
+        <div class="interior-grid">
+          <img src="images/interior_kitchen.jpg" alt="Kitchen">
+          <img src="images/interior_lounge.jpg" alt="Lounge">
+        </div>
+        <div class="interior-label">
+          <div class="prop-location" style="color:var(--gold-light);">Premium Finishes</div>
+          <div class="prop-title" style="color:white;font-size:17px;">High-End Interiors</div>
+          <p style="font-size:12px;color:rgba(255,255,255,0.45);margin-top:4px;">Modern kitchens, sculpted ceilings &amp; quality fittings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="products-header fi">
+    <div>
+      <div class="section-label">Building Materials</div>
+      <h2 class="section-title" style="color:white;">Product Catalogue</h2>
+      <div class="gold-line"></div>
+    </div>
+    <p class="section-desc" style="color:rgba(255,255,255,0.45);">Premium precast concrete products manufactured and delivered across Kenya.</p>
+  </div>
+  <div class="products-grid fi">
+    <div class="prod-card"><div class="prod-img-wrap"><img class="prod-img" src="images/prod_wall_coping.jpg" alt="Wall Coping"><div class="prod-num">01</div></div><div class="prod-body"><div class="prod-name">Wall Copings</div><div class="prod-desc">Seals wall tops, sheds water from masonry, protects against frost &amp; weather.</div><div class="prod-prices"><div class="prod-price-row"><span class="prod-size">250&times;65&times;600mm</span><span class="prod-price-val">KES 100</span></div><div class="prod-price-row"><span class="prod-size">300&times;65&times;600mm</span><span class="prod-price-val">KES 130</span></div><div class="prod-price-row"><span class="prod-size">330&times;65&times;600mm</span><span class="prod-price-val">KES 180</span></div></div></div></div>
+    <div class="prod-card"><div class="prod-img-wrap"><img class="prod-img" src="images/prod_interlocking_blocks2.jpg" alt="Interlocking Blocks"><div class="prod-num">02</div></div><div class="prod-body"><div class="prod-name">Interlocking Blocks</div><div class="prod-desc">No mortar needed. Fire-resistant, weather-resistant. Temp or permanent structures.</div><div class="prod-prices"><div class="prod-price-row"><span class="prod-size">4" &#8211; 100mm</span><span class="prod-price-val">KES 60</span></div><div class="prod-price-row"><span class="prod-size">6" &#8211; 150mm</span><span class="prod-price-val">KES 70</span></div><div class="prod-price-row"><span class="prod-size">8" &#8211; 200mm</span><span class="prod-price-val">KES 90</span></div></div></div></div>
+    <div class="prod-card"><div class="prod-img-wrap"><img class="prod-img" src="images/prod_cabros.jpg" alt="Interlocking Pavers"><div class="prod-num">03</div></div><div class="prod-body"><div class="prod-name">Interlocking Pavers</div><div class="prod-desc">Quad cabros for driveways, parking, walkways &amp; warehouse floors.</div><div class="prod-prices"><div class="prod-price-row"><span class="prod-size">Light Duty 60mm</span><span class="prod-price-val">KES 780/m&sup2;</span></div><div class="prod-price-row"><span class="prod-size">Medium Duty 80mm</span><span class="prod-price-val">KES 880/m&sup2;</span></div></div></div></div>
+    <div class="prod-card"><div class="prod-img-wrap"><img class="prod-img" src="images/prod_paving_slabs.jpg" alt="Paving Slabs"><div class="prod-num">04</div></div><div class="prod-body"><div class="prod-name">Paving Slabs</div><div class="prod-desc">Professional-grade concrete slabs for outdoor and indoor surfaces.</div><div class="prod-prices"><div class="prod-price-row"><span class="prod-size">300&times;600&times;50mm</span><span class="prod-price-val">KES 180</span></div><div class="prod-price-row"><span class="prod-size">600&times;600&times;50mm</span><span class="prod-price-val">KES 230</span></div></div></div></div>
+    <div class="prod-card"><div class="prod-img-wrap"><img class="prod-img" src="images/prod_road_kerbs.jpg" alt="Road Kerb Stones"><div class="prod-num">05</div></div><div class="prod-body"><div class="prod-name">Road Kerb Stones</div><div class="prod-desc">Precast L-shaped kerbs for road edging, drainage &amp; boundary definition.</div><div class="prod-prices"><div class="prod-price-row"><span class="prod-size">12&times;225&times;900mm (per m&sup2;)</span><span class="prod-price-val">KES 350</span></div><div class="prod-price-row"><span class="prod-size">Road Channels (per m&sup2;)</span><span class="prod-price-val">KES 220</span></div></div></div></div>
+    <div class="prod-card"><div class="prod-img-wrap"><img class="prod-img" src="images/prod_wall_coping2.jpg" alt="Fencing Poles"><div class="prod-num">06</div></div><div class="prod-body"><div class="prod-name">Fencing Poles &amp; Drains</div><div class="prod-desc">Steel-reinforced posts cured 28 days. Shallow drains for surface water management.</div><div class="prod-prices"><div class="prod-price-row"><span class="prod-size">8ft fencing post</span><span class="prod-price-val">KES 1,320</span></div><div class="prod-price-row"><span class="prod-size">10ft fencing post</span><span class="prod-price-val">KES 1,620</span></div><div class="prod-price-row"><span class="prod-size">Shallow Drains</span><span class="prod-price-val">KES 250</span></div></div></div></div>
+  </div>
+</section>
+
+<section class="progress" id="progress">
+  <div class="fi">
+    <div class="section-label">Site Updates</div>
+    <h2 class="section-title">Construction Progress</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc" style="margin-top:16px;">Project commenced May 2023 &middot; Expected completion 25th August 2026</p>
+  </div>
+  <div class="progress-grid fi">
+    <div class="progress-img-wrap"><img src="images/construction1.jpg" alt="Roof slab"><div class="progress-label">Roof Slab &#8212; Interlocking Block System</div></div>
+    <div class="progress-img-wrap"><img src="images/construction2.jpg" alt="Foundation"><div class="progress-label">Foundation &amp; Reinforcement Works</div></div>
+    <div class="progress-img-wrap"><img src="images/building_photo1.jpg" alt="Exterior" style="object-position:center 30%;"><div class="progress-label">Exterior Finishing &#8212; Nearly Complete</div></div>
+    <div class="progress-img-wrap"><img src="images/building_photo2.jpg" alt="Facade" style="object-position:center 30%;"><div class="progress-label">Blue &amp; White Facade &#8212; Brand Identity</div></div>
+    <div class="progress-img-wrap"><img src="images/interior_kitchen.jpg" alt="Kitchen"><div class="progress-label">Kitchen Units &#8212; Fully Fitted</div></div>
+    <div class="progress-img-wrap"><img src="images/interior_lounge.jpg" alt="Lounge"><div class="progress-label">Lounge &#8212; Sculpted Ceiling &amp; Chandelier</div></div>
+  </div>
+</section>
+
+<section class="payment" id="payment">
+  <div class="payment-grid">
+    <div class="payment-visual fi">
+      <div class="plan-big">30%</div>
+      <div class="plan-sub">Deposit &amp; Receive Your Keys</div>
+      <div class="plan-steps">
+        <div class="plan-step"><div class="plan-step-num">1</div><div class="plan-step-txt"><strong>Pay 30% deposit</strong> and take immediate possession &#8212; move in on day one.</div></div>
+        <div class="plan-step"><div class="plan-step-num">2</div><div class="plan-step-txt"><strong>KES 230,209/month</strong> over 24 months to clear the remaining balance.</div></div>
+        <div class="plan-step"><div class="plan-step-num">3</div><div class="plan-step-txt"><strong>Full title transfer</strong> on completion of payments. Your home, fully yours.</div></div>
+      </div>
+    </div>
+    <div class="fi">
+      <div class="section-label">Flexible Financing</div>
+      <h2 class="section-title">2-Year Payment Plan</h2>
+      <div class="gold-line"></div>
+      <p class="section-desc" style="margin-top:20px;">We believe everyone deserves a quality home. Move in immediately while paying over time.</p>
+      <div class="payment-features">
+        <div class="pay-feat"><div class="pay-feat-dot"></div><div class="pay-feat-txt"><strong>Keys on deposit</strong>Move in from day one</div></div>
+        <div class="pay-feat"><div class="pay-feat-dot"></div><div class="pay-feat-txt"><strong>24 months</strong>Manageable instalments</div></div>
+        <div class="pay-feat"><div class="pay-feat-dot"></div><div class="pay-feat-txt"><strong>No hidden fees</strong>Transparent pricing</div></div>
+        <div class="pay-feat"><div class="pay-feat-dot"></div><div class="pay-feat-txt"><strong>Title deed</strong>On plan completion</div></div>
+      </div>
+      <a href="#contact" class="btn-primary">Apply for Payment Plan</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-label fi">Get in Touch</div>
+  <h2 class="section-title fi">Enquire About a Property</h2>
+  <div class="gold-line fi"></div>
+  <div class="contact-grid">
+    <div class="contact-info fi">
+      <p style="color:rgba(255,255,255,0.5);font-size:14px;line-height:1.75;">Whether you're buying, renting, or need building materials &#8212; we're here to help.</p>
+      <div class="contact-item"><div class="contact-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#e8b84b" stroke-width="1.5"><path stroke-linecap="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div><div><div class="contact-lbl">Phone</div><div class="contact-val">+254 (0) 114 837 807</div></div></div>
+      <div class="contact-item"><div class="contact-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#e8b84b" stroke-width="1.5"><path stroke-linecap="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><div><div class="contact-lbl">Email</div><div class="contact-val">beytras@gmail.com</div></div></div>
+      <div class="contact-item"><div class="contact-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#e8b84b" stroke-width="1.5"><path stroke-linecap="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><div><div class="contact-lbl">Kitengela Apartments</div><div class="contact-val">Off Namanga Road, Safaricom One Estate<br>Opposite Bomani Hotel &#8212; 2km from town</div></div></div>
+      <div class="contact-item"><div class="contact-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#e8b84b" stroke-width="1.5"><path stroke-linecap="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div><div><div class="contact-lbl">Head Office</div><div class="contact-val">Uwanja Road, Favour Apartment<br>P.O. Box 1143-00241, Kitengela</div></div></div>
+    </div>
+    <div class="contact-form fi">
+      <div class="form-row"><div class="form-field"><label>First Name</label><input type="text" placeholder="John"></div><div class="form-field"><label>Last Name</label><input type="text" placeholder="Doe"></div></div>
+      <div class="form-field"><label>Email</label><input type="email" placeholder="john@example.com"></div>
+      <div class="form-field"><label>Phone</label><input type="tel" placeholder="+254 7XX XXX XXX"></div>
+      <div class="form-field"><label>I'm interested in</label><select><option value="">Select&hellip;</option><option>Kitengela 2-Bed Apartment &#8212; KES 6M</option><option>Kitengela 3-Bed Apartment &#8212; KES 7M</option><option>Utumishi 5-Bed House &#8212; KES 15M</option><option>Apartment Rental &#8212; 2 Bed (KES 40k/mo)</option><option>Apartment Rental &#8212; 3 Bed (KES 45k/mo)</option><option>Building Materials / Products</option><option>Payment Plan Information</option></select></div>
+      <div class="form-field"><label>Message</label><textarea placeholder="Tell us what you need&hellip;"></textarea></div>
+      <button class="btn-primary" style="width:100%;text-align:center;padding:15px;" onclick="alert('Thank you! Our team will contact you shortly.\n\nPhone: +254 114 837 807\nEmail: beytras@gmail.com')">Send Enquiry &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <svg viewBox="0 0 220 48" height="34" xmlns="http://www.w3.org/2000/svg"><polyline points="12,32 22,19 32,32" fill="none" stroke="#c9962a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><polyline points="22,32 32,19 42,32" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><rect x="12" y="34" width="30" height="3" fill="rgba(255,255,255,0.35)" rx="1"/><text x="52" y="29" font-family="Georgia,serif" font-size="17" font-weight="bold" fill="rgba(255,255,255,0.4)" letter-spacing="1.5">BEYTRAS</text><text x="53" y="41" font-family="Georgia,serif" font-size="10" fill="rgba(201,150,42,0.5)" letter-spacing="2.5">APARTMENTS</text></svg>
+    <div class="footer-copy" style="margin-top:8px;">&#169; 2026 Beytras Apartments &middot; P.O. Box 1143-00241, Kitengela</div>
+  </div>
+  <ul class="footer-links">
+    <li><a href="#properties">Properties</a></li><li><a href="#products">Products</a></li>
+    <li><a href="#progress">Construction</a></li><li><a href="#payment">Payment Plans</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add("in"),e.target.dataset.d||0)}),{threshold:0.08});
+  document.querySelectorAll(".fi").forEach((el,i)=>{el.dataset.d=(i%5)*80;io.observe(el);});
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth"})}}));
+</script>
+</body>
+</html>
