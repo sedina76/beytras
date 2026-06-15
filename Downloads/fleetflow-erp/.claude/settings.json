@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -b /tmp/ff_cookies.txt http://localhost:3000/drivers -L -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt http://localhost:3000/fuel -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt http://localhost:3000/invoices -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt http://localhost:3000/hr-payroll -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt http://localhost:3000/water-sources -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt http://localhost:3000/api/customers)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['customers'][0]['id'] if d.get\\('customers'\\) else d\\)\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt http://localhost:3000/customers/cust_254204222000 -o /dev/null -w '%{http_code}')",
+      "Bash(curl -s -b /tmp/ff_cookies.txt http://localhost:3000/api/orders)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(o['id']\\) for o in d.get\\('orders',[]\\)[:2]]\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d[0]['id'] if isinstance\\(d,list\\) else d['orders'][0]['id']\\)\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt \"http://localhost:3000/orders/order_000\" -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt \"http://localhost:3000/maintenance/new\" -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s -b /tmp/ff_cookies.txt \"http://localhost:3000/invoices/new\" -o /dev/null -w \"%{http_code}\")"
+    ]
+  }
+}
